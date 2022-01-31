@@ -18,8 +18,9 @@ import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import DashboardScreen from "../screens/DashboardScreen";
+import StatisticScreen from "../screens/StatisticScreen";
+import SettingsScreen from "../screens/SettingsScreen";
 import {
   RootStackParamList,
   RootTabParamList,
@@ -86,7 +87,7 @@ function BottomTabNavigator() {
     >
       <BottomTab.Screen
         name="Today"
-        component={TabOneScreen}
+        component={DashboardScreen}
         options={({ navigation }: RootTabScreenProps<"Today">) => ({
           title: "Today",
           tabBarIcon: ({ color }) => (
@@ -111,7 +112,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Statistic"
-        component={TabTwoScreen}
+        component={StatisticScreen}
         options={{
           title: "Statistic",
           tabBarIcon: ({ color }) => (
@@ -121,7 +122,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Settings"
-        component={TabTwoScreen}
+        component={SettingsScreen}
         options={{
           title: "Settings",
           tabBarIcon: ({ color }) => <TabBarIcon name="cog" color={color} />,

@@ -1,14 +1,10 @@
 import { StyleSheet } from "react-native";
-
 import { Text, View } from "../components/Themed";
-import { RootTabScreenProps } from "../types";
 
-export default function TabOneScreen({
-  navigation,
-}: RootTabScreenProps<"Today">) {
+export default function StatisticScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Today</Text>
+      <Text style={styles.title}>Statistic</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
