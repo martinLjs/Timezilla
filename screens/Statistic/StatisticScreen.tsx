@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { Text, View } from "../components/Themed";
+import { Text, View } from "../../components/Themed";
 
-export default function SettingsScreen() {
+export default function StatisticScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Settings</Text>
+      <Text style={styles.title}>Statistic</Text>
       <View
         style={styles.separator}
         lightColor="#eee"

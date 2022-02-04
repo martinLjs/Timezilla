@@ -1,10 +1,11 @@
+import { observer } from "mobx-react";
 import { StyleSheet } from "react-native";
-import { Text, View } from "../components/Themed";
+import { Text, View } from "../../components/Themed";
 
-export default function StatisticScreen() {
+const SettingsScreen = observer(() => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Statistic</Text>
+      <Text style={styles.title}>Settings</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
@@ -12,7 +13,8 @@ export default function StatisticScreen() {
       />
     </View>
   );
-}
+});
+export default SettingsScreen;
 
 const styles = StyleSheet.create({
   container: {

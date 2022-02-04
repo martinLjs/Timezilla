@@ -18,9 +18,9 @@ import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import DashboardScreen from "../screens/DashboardScreen";
-import StatisticScreen from "../screens/StatisticScreen";
-import SettingsScreen from "../screens/SettingsScreen";
+import DashboardScreen from "../screens/Dashboard/DashboardScreen";
+import StatisticScreen from "../screens/Statistic/StatisticScreen";
+import SettingsScreen from "../screens/Settings/SettingsScreen";
 import {
   RootStackParamList,
   RootTabParamList,
